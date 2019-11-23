@@ -4,7 +4,7 @@ SDIR = src
 IDIR = include
 ODIR = obj
 
-_OBJ = pwdgen.o option_processing.o main.o
+_OBJ = utils.o nato.o pwdgen.o option_processing.o main.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 CC = gcc

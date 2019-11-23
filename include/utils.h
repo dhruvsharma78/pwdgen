@@ -9,4 +9,6 @@
 
 #define PROGRAM_NAME "pwdgen"
 
+void usage(void);
+
 #endif

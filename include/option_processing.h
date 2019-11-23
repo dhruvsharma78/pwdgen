@@ -2,10 +2,9 @@
 #define OPTION_PROCESSING_H
 
 #include "utils.h"
+#include "constants.h"
 #include <getopt.h>
-
-// Bit Field to store options for pwd generation
-extern unsigned int __option_flags;
+ 
 #define SET_OPTION(bit) SET_BIT(__option_flags, bit)
 #define IS_OPTION_SET(bit) IS_BIT_SET(__option_flags, bit)
 
@@ -21,8 +20,6 @@ enum __OPTION_BITS{
   NO_WARNINGS_BIT,
   ONLY_PWD_BIT
 };
-
-extern unsigned int __pwd_len;
 
 enum __OPTIONS{	       
   SPECIAL_CHARS,
